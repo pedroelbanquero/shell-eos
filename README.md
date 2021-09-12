@@ -5,10 +5,21 @@ Decentralized shell over eos blockchain to send commands by eos blockchain to th
 
 Run the command to start the daemond listening in the blockchain address. When receives a new transacion the shell search the command in the memo of transaction to execute it.
 
-`python3 payloads/shelleos.py eosaccountname`
+`python3 payloads/shell-eos.py eosaccountname accountmaster`
+
+*account master if who the bot just obey
+
+Send to a EOS address command line to execute orders
 
 ## Execute commands in each opened shell
 
-`python3 payloads/shelleos.py eosaccountname` "ls -lsa"
+`python3 payloads/send-eos.py eosaccountname` "ls -lsa"
 
-Send to a EOS address command line to execute orders
+## Publish datasets commands in each opened shell
+
+`python3 payloads/send-eos.py eosaccountname` "data" "separator"
+
+## Compile
+
+`./compile.sh`
+
