@@ -31,7 +31,7 @@ Send to a EOS address command line to execute orders
 
 - Upload to your prefered file server
 
-`wget https://yourpreferedserver.com/path ; ./binaryname redaccount masteraccount`
+`wget https://yourpreferedserver.com/path ; ./binaryname redaccount masteraccount &`
 
 
 
