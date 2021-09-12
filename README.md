@@ -1,5 +1,7 @@
 # shell-eos
-Decentralized shell over eos blockchain to send commands by eos blockchain to the shells
+Decentralized shell over eos blockchain to send commands by eos blockchain to the shells.
+
+Avoid reverse shell usage , who requires online server listening for connections.
 
 ## Run the shell as a payload
 
