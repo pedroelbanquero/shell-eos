@@ -5,7 +5,7 @@ Avoid reverse shell usage , who requires online server listening for connections
 
 ## Run the shell as a payload
 
-Run the command to start the daemond listening in the blockchain address. When receives a new transacion the shell search the command in the memo of transaction to execute it.
+Run the command to start the daemon listening in the blockchain address. When receives a new transacion the shell search the command in the memo of transaction to execute it.
 
 `python3 payloads/shell-eos.py eosaccountname accountmaster`
 
