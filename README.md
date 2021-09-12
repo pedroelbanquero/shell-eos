@@ -9,7 +9,7 @@ Run the command to start the daemond listening in the blockchain address. When r
 
 `python3 payloads/shell-eos.py eosaccountname accountmaster`
 
-*account master if who the bot just obey
+*account master is who the bot obey
 
 Send to a EOS address command line to execute orders
 
