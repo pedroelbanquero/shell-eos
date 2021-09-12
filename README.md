@@ -17,7 +17,7 @@ Send to a EOS address command line to execute orders
 
 `python3 payloads/send-eos.py eosaccountname` "ls -lsa"
 
-## Publish datasets commands in each opened shell
+## Publish datasets in a address as a recipient
 
 `python3 payloads/send-eos.py eosaccountname` "data" "separator"
 
